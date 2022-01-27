@@ -1,0 +1,82 @@
+@import './mixins';
+
+.css-priority-0 {
+  --index-article-card-width: 300px;
+  @include variable-at-breakpoints($variable-name: '--index-title-1-font-size', $xs: 2.5rem, $sm: 65px);
+  --index-title-3-font-size: calc((var(--index-title-1-font-size) * 2) / 3);
+  --happy-stories-bg: url(/images/heartsbg.png);
+  --index-search-avatar-size: 56px;
+
+  @include variable-at-breakpoints(
+    $variable-name: '--index-steps-avatar-size',
+    $xs: 20vw,
+    $sm: 20vw,
+    $md: 11vw,
+    $lg: 9vw,
+    $xl: 8vw
+  );
+
+  @include variable-at-breakpoints(
+    $variable-name: '--index-article-card-width',
+    $xs: 75vw,
+    $sm: 400px,
+    $md: 250px,
+    $lg: 300px
+  );
+  @include variable-at-breakpoints(
+    $variable-name: '--index-contact-option-card-width',
+    $xs: 300px,
+    $sm: 250px,
+    $md: 250px,
+    $lg: 300px
+  );
+
+  @include variable-at-breakpoints(
+    $variable-name: '--mb-banner-height',
+    $xs: 150px,
+    $sm: 300px,
+    $md: 350px,
+    $lg: 350px
+  );
+
+  @include variable-at-breakpoints($variable-name: '--mb-avatar-size', $xs: 100px, $sm: 100px, $md: 180px, $lg: 180px);
+
+  --index-banner-max-height: 600px;
+  --index-banner-2-img: url(/images/homeheaderBg2.jpg);
+  --index-banner-2-height: 200px;
+  --footer-section-title-text: #eee;
+  --inbox-chat-box-bg: #e7e7d8;
+  --footer-section-link-text: #ccc;
+  --component-view-bg: url(/images/2.jpg);
+  --gallery-btns-width: 200px; // TODO make it responsive
+  --app-bar-logged-in-user-avatar-size: 38px;
+  @include variable-at-breakpoints(
+    $variable-name: '--container-max-width',
+    $xs: 100%,
+    $sm: 100%,
+    $md: 100%,
+    $lg: 1240px,
+    $xl: 1240px
+  );
+  
+  &.bureau-mode .bureau-container {
+    @include variable-at-breakpoints('--container-max-width', '99%', '99%', '99%', '99%', '1900px');
+  }
+
+  @include variable-at-breakpoints($variable-name: '--gallery-grid-columns', $xs: 1, $sm: 2, $md: 3, $lg: 4, $xl: 4);
+
+  @for $n from 0 to 6 {
+    --trust-score-#{$n}-bg: #dc3545;
+    --trust-score-#{$n}-text: white;
+  }
+
+  @for $n from 6 to 8 {
+    --trust-score-#{$n}-bg: green;
+    --trust-score-#{$n}-text: white;
+  }
+
+  @for $n from 8 to 11 {
+    --trust-score-#{$n}-bg: gold;
+    --trust-score-#{$n}-text: black;
+  }
+}

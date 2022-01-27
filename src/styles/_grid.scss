@@ -1,0 +1,22 @@
+.d-grid {
+  display: grid;
+}
+
+.grid-centered {
+  display: grid;
+  place-items: center;
+}
+
+@for $columns from 1 to 6 {
+  .grid-columns-#{$columns} {
+    grid-template-columns: repeat(#{$columns}, 1fr);
+  }
+}
+
+.grid-column-span-2 {
+  grid-column: 1 / span 2;
+}
+
+.grid-column-span-3 {
+  grid-column: 1 / span 3;
+}

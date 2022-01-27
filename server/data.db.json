@@ -1,0 +1,839 @@
+{
+  "bureau": {
+    "analytics": [
+      { "icon": "fa-users", "title": "Total Profiles", "count": 50 },
+      { "icon": "fa-check", "title": "Approved Profiles", "count": 20 },
+      { "icon": "fa-times", "title": "Unapproved Profiles", "count": 20 },
+      { "icon": "fa-eye", "title": "View of Happy Vivah", "count": 5000 },
+      { "icon": "fa-eye", "title": "View on Uploaded Profiles", "count": 15000 }
+    ],
+    "bureau": {
+      "banner": "/images/homeheaderBg2.jpg",
+      "avatar": "/images/bureauprofile.png",
+      "contactNumber": "+91 - 99999 99999",
+      "ownerName": "Ms. Shweta",
+      "organizationName": "HappyVivah.com Official",
+      "organizationSubName": "Praxis Consultant",
+      "verified": true,
+      "rating": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus magna vitae egestas pretium. Curabitur rhoncus eget est at cursus.",
+      "address": ["Delta 2, Greater Noida,", "Gautam Buddha Nagar,", "Uttar Pradesh"],
+      "contactNumbers": ["+91 - 99999 88888", "+91 - 99999 81818"],
+      "emails": ["info@happyvivah.com"],
+      "services": {
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "services": [
+          { "id": 1, "icon": "fa-address-book", "text": "Lorem ipsum dolor sit amet" },
+          { "id": 2, "icon": "fa-taxi", "text": "Duis aute irure dolor in reprehenderit" },
+          { "id": 3, "icon": "fa-bank", "text": "Excepteur sint occaecat cupidatat non proident" },
+          { "id": 4, "icon": "fa-certificate", "text": "Ut enim ad minim veniam, quis nostrud" }
+        ]
+      },
+      "about": {
+        "icon": "/images/logo.png",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      }
+    },
+    "gallery": [
+      { "img": "/images/profile1.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 0 },
+      { "img": "/images/profile2.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 1 },
+      { "img": "/images/profile3.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 2 },
+      { "img": "/images/profile4.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 3 },
+      { "img": "/images/profile5.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 4 },
+      { "img": "/images/mbimg1.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 5 },
+      { "img": "/images/loginside.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 6 }
+    ],
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Siddharth",
+        "avatar": "/images/profile1.jpg",
+        "rating": 5,
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus magna vitae egestas pretium. Curabitur rhoncus eget est at cursus."
+      },
+      {
+        "id": 2,
+        "name": "Charul",
+        "rating": 4,
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus magna vitae egestas pretium. Curabitur rhoncus eget est at cursus."
+      },
+      {
+        "id": 3,
+        "name": "Jasweer",
+        "rating": 3,
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus magna vitae egestas pretium. Curabitur rhoncus eget est at cursus."
+      }
+    ],
+    "similarBureaus": [
+      { "id": 2, "name": "Sri Sowbhagya Marriage Bureau", "rating": 5 },
+      { "id": 3, "name": "MuslimSaathi Matrimony Services", "rating": 5 },
+      { "id": 4, "name": "Dream Partner Matrimonial", "rating": 3 },
+      { "id": 5, "name": "Dream Partner Matrimonial", "rating": 4 },
+      { "id": 6, "name": "Brahmin Matrimony Service", "rating": 2 }
+    ],
+    "uploadedProfiles": [
+      {
+        "name": "Ajay Jaiswal",
+        "id": "KVY154D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile1.jpg"
+      },
+      {
+        "name": "Anna Hajare",
+        "id": "MVY854D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile2.jpg"
+      },
+      {
+        "name": "Jasmine",
+        "id": "JVY664D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile3.jpg"
+      },
+      {
+        "name": "Sonia Gandhi",
+        "id": "SGVY655D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile4.jpg"
+      },
+      {
+        "name": "Micheal Jackson",
+        "id": "MJVY854D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile5.jpg"
+      },
+      {
+        "name": "Narendra Modi",
+        "id": "NMVY666D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile6.jpg"
+      }
+    ]
+  },
+  "happyStories": [
+    {
+      "title": "Pratima and Aniket",
+      "description": "By true luck. After exhausting all the options and exhausting myself out, i was close to giving up on the nation of marriage. I stopped checking my profile and took a sabbatical. One fine afternoon, i...",
+      "img": "/images/story1.png"
+    },
+    {
+      "title": "Alana and Edison",
+      "description": "By true luck. After exhausting all the options and exhausting myself out, i was close to giving up on the nation of marriage. I stopped checking my profile and took a sabbatical. One fine afternoon, i...",
+      "img": "/images/story2.png"
+    },
+    {
+      "title": "Swati and Jayesh",
+      "description": "By true luck. After exhausting all the options and exhausting myself out, i was close to giving up on the nation of marriage. I stopped checking my profile and took a sabbatical. One fine afternoon, i...",
+      "img": "/images/story3.png"
+    }
+  ],
+  "recentBlogs": [
+    {
+      "title": "The best gifts to ask or give on a wedding day",
+      "description": "A wedding gift that will count is never one that will be boring; when you decide to give out a gift to the newly wedded couple; it must be carefully selected so that it will make the desired impact on the couple for...",
+      "img": "/images/blog1.jpg",
+      "publisher": "Vijay",
+      "date": "2021-03-23T17:43:41.587Z"
+    },
+    {
+      "title": "The best gifts to ask or give on a wedding day",
+      "description": "A wedding gift that will count is never one that will be boring; when you decide to give out a gift to the newly wedded couple; it must be carefully selected so that it will make the desired impact on the couple for...",
+      "img": "/images/blog1.jpg",
+      "publisher": "Vijay",
+      "date": "2021-03-23T17:43:41.587Z"
+    },
+    {
+      "title": "The best gifts to ask or give on a wedding day",
+      "description": "A wedding gift that will count is never one that will be boring; when you decide to give out a gift to the newly wedded couple; it must be carefully selected so that it will make the desired impact on the couple for...",
+      "img": "/images/blog1.jpg",
+      "publisher": "Vijay",
+      "date": "2021-03-23T17:43:41.587Z"
+    }
+  ],
+  "mb-search": {
+    "filters": [
+      { "id": 1, "title": "Recently Joined", "field": "recentlyJoined", "items": ["Within a month"] },
+      { "id": 20, "title": "Active Members", "field": "activeMembers", "items": ["Within a month"] },
+      {
+        "id": 2,
+        "title": "Annual Income",
+        "field": "annualIncome",
+        "items": [
+          "Under 1 Lakh. (212)",
+          "2,00,000 - 3,00,000 (6534)",
+          "3,00,000 - 4,00,000 (331)",
+          "4,00,000 - 5,00,000 (1545)"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Working As",
+        "field": "workingAs",
+        "items": ["Others (323)", "Businessman (1454)", "Engineer (Non-IT) (434)", "Not working (5545)"]
+      },
+      {
+        "id": 4,
+        "title": "Education",
+        "field": "education",
+        "items": ["B.A (3143)", "B.Com (2984)", "BE/B.Tech (2826)", "High School (1768)"]
+      },
+      {
+        "id": 5,
+        "title": "Diet",
+        "field": "diet",
+        "items": ["Non-Veg (3143)", "Veg (2984)", "Eggetarian (2826)", "Vegan (1768)", "Jain (1768)"]
+      },
+      { "id": 6, "title": "Country", "field": "country", "items": ["India", "USA", "UK", "Austrailia"] },
+      {
+        "id": 7,
+        "title": "State",
+        "field": "state",
+        "items": ["Andhra Pradesh (2826)", "Bihar (2826)", "Delhi (2826)", "Punjab (2826)", "Uttar Pradesh (2826)"]
+      },
+      { "id": 8, "title": "City", "field": "city", "items": ["All (2826)"] }
+    ],
+    "result": {
+      "count": 55,
+      "tags": "Female, - Years",
+      "data": [
+        {
+          "id": "HVP3434",
+          "name": "Ajay Jaiswal",
+          "matched": { "id": "HVP3434", "name": "Ajay Jaiswal" },
+          "profileCreatedBy": "Parent/Guardian",
+          "img": "/images/profile1.jpg",
+          "trustScore": 3,
+          "online": true,
+          "namedAttributes": true,
+          "introduction": "I would describe myself as someone who is honest, caring, intelligent, hardworking and ambitious. I have a great sense of humor. I am an easygoing person & don't get east Hello world to me is the sky",
+          "attributes": [
+            { "name": "Age/Height", "value": "26yrs / 5ft 7 inchs" },
+            { "name": "Religion", "value": "Hindu" },
+            { "name": "Mother Tongue", "value": "Hindi" },
+            { "name": "Cast/Community", "value": "Brahmin" },
+            { "name": "Family Location", "value": "Hamirpur, Uttar Pradesh" },
+            { "name": "Education", "value": "MBA" },
+            { "name": "Profession", "value": "Businessman" },
+            { "name": "Income", "value": "Under 6 Lacs" }
+          ]
+        },
+        {
+          "id": "HVP4434",
+          "name": "Sandeep Sahni",
+          "matched": { "id": "HVP4434", "name": "Sandeep Sahni" },
+          "profileCreatedBy": "Parent/Guardian",
+          "img": "/images/profile3.jpg",
+          "trustScore": 3,
+          "online": true,
+          "namedAttributes": "2021-03-28T19:48:02.814Z",
+          "introduction": "I would describe myself as someone who is honest, caring, intelligent, hardworking and ambitious. I have a great sense of humor. I am an easygoing person & don't get east Hello world to me is the sky",
+          "attributes": [
+            { "name": "Age/Height", "value": "26yrs / 5ft 7 inchs" },
+            { "name": "Religion", "value": "Hindu" },
+            { "name": "Mother Tongue", "value": "Hindi" },
+            { "name": "Cast/Community", "value": "Brahmin" },
+            { "name": "Family Location", "value": "Hamirpur, Uttar Pradesh" },
+            { "name": "Education", "value": "MBA" },
+            { "name": "Profession", "value": "Businessman" },
+            { "name": "Income", "value": "Under 6 Lacs" }
+          ]
+        },
+        {
+          "id": "HVP5434",
+          "name": "Ashish Negi",
+          "matched": { "id": "HVP5434", "name": "Ashish Negi" },
+          "profileCreatedBy": "Parent/Guardian",
+          "img": "/images/profile3.jpg",
+          "trustScore": 3,
+          "online": true,
+          "namedAttributes": true,
+          "introduction": "I would describe myself as someone who is honest, caring, intelligent, hardworking and ambitious. I have a great sense of humor. I am an easygoing person & don't get east Hello world to me is the sky",
+          "attributes": [
+            { "name": "Age/Height", "value": "26yrs / 5ft 7 inchs" },
+            { "name": "Religion", "value": "Hindu" },
+            { "name": "Mother Tongue", "value": "Hindi" },
+            { "name": "Cast/Community", "value": "Brahmin" },
+            { "name": "Family Location", "value": "Hamirpur, Uttar Pradesh" },
+            { "name": "Education", "value": "MBA" },
+            { "name": "Profession", "value": "Businessman" },
+            { "name": "Income", "value": "Under 6 Lacs" }
+          ]
+        },
+        {
+          "id": "HVP5435",
+          "name": "Sahil Gautam",
+          "matched": { "id": "HVP5435", "name": "Sahil Gautam" },
+          "profileCreatedBy": "Parent/Guardian",
+          "img": "/images/profile4.jpg",
+          "trustScore": 3,
+          "online": "2021-03-28T19:48:02.814Z",
+          "namedAttributes": true,
+          "introduction": "I would describe myself as someone who is honest, caring, intelligent, hardworking and ambitious. I have a great sense of humor. I am an easygoing person & don't get east Hello world to me is the sky",
+          "attributes": [
+            { "name": "Age/Height", "value": "26yrs / 5ft 7 inchs" },
+            { "name": "Religion", "value": "Hindu" },
+            { "name": "Mother Tongue", "value": "Hindi" },
+            { "name": "Cast/Community", "value": "Brahmin" },
+            { "name": "Family Location", "value": "Hamirpur, Uttar Pradesh" },
+            { "name": "Education", "value": "MBA" },
+            { "name": "Profession", "value": "Businessman" },
+            { "name": "Income", "value": "Under 6 Lacs" }
+          ]
+        }
+      ]
+    }
+  },
+  "galleries": {
+    "hansika0": {
+      "public": [
+        { "img": "/images/profile1.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 0 },
+        { "img": "/images/profile2.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 1 },
+        { "img": "/images/profile3.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 2 },
+        { "img": "/images/profile4.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 3 },
+        { "img": "/images/profile5.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 4 },
+        { "img": "/images/mbimg1.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 5 },
+        { "img": "/images/loginside.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 6 },
+        { "img": "/images/profile6.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 7 },
+        { "img": "/images/profile7.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 8 },
+        { "img": "/images/profile8.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 9 }
+      ],
+      "private": [
+        { "img": "/images/profile1.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 10 },
+        { "img": "/images/profile2.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 11 },
+        { "img": "/images/profile3.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 12 },
+        { "img": "/images/profile4.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 13 },
+        { "img": "/images/profile5.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 14 },
+        { "img": "/images/mbimg1.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 51 },
+        { "img": "/images/loginside.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 16 },
+        { "img": "/images/profile6.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 17 },
+        { "img": "/images/profile7.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 18 },
+        { "img": "/images/profile8.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 19 }
+      ]
+    },
+    "HVP3434": {
+      "public": [
+        { "img": "/images/profile1.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 0 },
+        { "img": "/images/profile2.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 1 },
+        { "img": "/images/profile3.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 2 },
+        { "img": "/images/profile4.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 3 },
+        { "img": "/images/profile5.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 4 },
+        { "img": "/images/mbimg1.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 5 },
+        { "img": "/images/loginside.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 6 },
+        { "img": "/images/profile6.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 7 },
+        { "img": "/images/profile7.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 8 },
+        { "img": "/images/profile8.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 9 }
+      ],
+      "private": [
+        { "img": "/images/profile1.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 10 },
+        { "img": "/images/profile2.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 11 },
+        { "img": "/images/profile3.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 12 },
+        { "img": "/images/profile4.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 13 },
+        { "img": "/images/profile5.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 14 },
+        { "img": "/images/mbimg1.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 51 },
+        { "img": "/images/loginside.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 16 },
+        { "img": "/images/profile6.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 17 },
+        { "img": "/images/profile7.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 18 },
+        { "img": "/images/profile8.jpg", "date": "2021-03-27T09:16:58.236Z", "id": 19 }
+      ]
+    }
+  },
+  "profiles": {
+    "hansika0": {
+      "kundliMatch": "Not Required",
+
+      "id": "hansika0",
+      "maritalStatus": "Never Married",
+      "profileCreatedBy": "self",
+      "img": "/images/mbimg1.jpg",
+      "trustScore": 3,
+      "dob": "1950-07-24",
+      "userType": "U",
+      "firstName": "Hansika",
+      "lastName": "Sharma",
+      "email": "hansika@gmail.com",
+      "password": "hansika",
+      "mobileNumber": "1234567890",
+      "countryCode": "+91",
+      "country": "India",
+      "gender": "F",
+      "profileCreatingFor": "self",
+      "verified": false,
+      "registerProgress": 60,
+      "aboutMe": "I am IT professional based in Mumbai, working as a senior software Engineer. I am 30 years of age and I live with my family that has parents and grandparents.I am a family oriented person and have confidence in living in joint family. In mean time, I jump the chance to persue books and play football.",
+      "height": 173,
+      "weight": 65,
+      "education": "MBA",
+      "motherTongue": "Hindi",
+      "secondaryLanguages": ["Hindi"],
+      "bodyType": "Slim",
+      "complexion": "Fair",
+      "ethenicGroup": "North Indian",
+      "disability": "No",
+      "workingWith": "Not Working",
+      "occupation": "Not Working",
+      "annualIncome": "Under 1 Lakh",
+      "companyDepartment": "Not Working",
+      "workLocation": "N/A",
+      "highestEducation": "masters",
+      "highestDegree": "MBA",
+      "highestDegreeInstitution": "LPU",
+      "income": "Under 1 Lakh",
+      "ownCar": "No",
+      "ownHouseFlat": "Yes",
+      "father": "Businessman",
+      "mother": "House Wife",
+      "familyLocation": "Hamirpur, Uttar Pradesh, India",
+      "familyNativePlace": "Moradabad",
+      "brothers": "02",
+      "marriedBrother": "01",
+      "sisters": "0",
+      "marriedSister": "0",
+      "familyType": "Nuclear",
+      "familyValues": "Traditional",
+      "familyStatus": "Middle Class",
+      "fathersStatus": "Self Employed",
+      "mothersStatus": "House Wife",
+      "familyCountry": "India",
+      "familyState": "Delhi",
+      "familyCity": "Delhi",
+      "familyBrothers": 6,
+      "familyMarriedBrothers": 4,
+      "familySisters": 1,
+      "familyMarriedSisters": 0,
+      "religion": "Hindu",
+      "manglik": "No",
+      "caste": "Brahmin",
+      "subCaste": "Brahmin Kanyakubj",
+      "religiousBelief": "Extreme",
+      "guru": "",
+      "guruOrganization": "",
+      "kundaliMatch": "Must",
+      "diet": "Veg",
+      "smoking": "Never",
+      "drinking": "No",
+      "yoga": "Daily",
+      "workout": "Never",
+      "party": "Never",
+      "preferredAge": [21, 29],
+      "preferredCaste": "Brahmin",
+      "preferredGender": "F",
+      "preferredMaritalStatus": "Never Married",
+      "preferredLanguage": "Hindi",
+      "preferredReligion": "Hindu",
+      "preferredCastCommunity": "Brahmin",
+      "preferredSubCaste": "Brahmin Kanyakubj",
+      "preferredCountry": "India",
+      "preferredState": ["Uttar Pradesh"],
+      "preferredCity": [
+        "Agra",
+        "Varanasi",
+        "Sarnath",
+        "Lucknow",
+        "Allahabad",
+        "Fatehpur Sikri",
+        "Mathura",
+        "Ayodhya",
+        "Aligarh",
+        "Baldeo"
+      ],
+      "aboutEducation": "I am science graduate and completed B.Ed. I also looking for Govt. job.\n\n**B.Sc** from **Bundelkhand University, Jhansi**",
+      "aboutFamily": "In my family, there are my father, my mother, two elder brother and myself. My father is a businessman and my mother is house wife. My family is a mix of modern and traditionl culture.",
+      "aboutReligion": "",
+      "aboutLifeStyle": "",
+      "aboutPreference": "I am looking for soulmate, who understanding, down to earth and enjoys every moment of life. Who will be my best friend of life...!",
+
+      "explore": [
+        { "text": "Viewed", "count": 2, "link": "/TODO" },
+        { "text": "Ignored Members", "count": 3, "link": "/TODO" },
+        { "text": "Deleted", "count": 4, "link": "/TODO" },
+        { "text": "Blocked Members", "count": 5, "link": "/TODO" }
+      ],
+      "perfectMatch": [
+        {
+          "id": "HVIPU94088",
+          "content": ["25 years, Hindu Brahmin, Brahmin Kanyabubj", "Hamirpur, Uttar Pradesh", "B.Sc, Under 1 Lakh"],
+          "date": "2021-03-29T06:35:15.589Z",
+          "avatar": "/images/profile4.jpg"
+        },
+        {
+          "id": "HVIPU94089",
+          "content": ["27 years, Hindu Brahmin, Brahmin Kanyabubj", "Hamirpur, Uttar Pradesh", "B.Sc, Under 1 Lakh"],
+          "date": "2021-03-29T05:35:15.589Z",
+          "avatar": "/images/profile4.jpg"
+        },
+        {
+          "id": "HVIPU94189",
+          "content": ["37 years, Hindu Brahmin, Brahmin Kanyabubj", "Hamirpur, Uttar Pradesh", "B.Sc, Under 1 Lakh"],
+          "date": "2021-03-30T05:35:15.589Z",
+          "avatar": "/images/profile4.jpg"
+        }
+      ],
+      "progressStatus": [
+        { "text": "Mobile Number Verified", "completed": true },
+        { "text": "Get 2 Times more Matches", "completed": true },
+        { "text": "Verify your profile with ID", "link": "/TODO", "completed": false }
+      ],
+      "analytics": [
+        { "icon": "fa-users", "title": "Invitations", "count": 1 },
+        { "icon": "fa-check", "title": "Accepted", "count": 20 },
+        { "icon": "fa-paper-plane", "title": "Send", "count": 3 }
+      ],
+      "prompts": [{ "type": "FACEBOOK_CONNECT" }, { "type": "UPDATE_ADDRESS" }]
+    },
+    "hansraj0": {
+      "country": "India",
+      "id": "hansraj0",
+      "img": "/images/profile5.jpg",
+      "profileCreatedBy": "self",
+      "trustScore": 3,
+      "dob": "1900-07-24",
+      "userType": "MB",
+      "firstName": "Hansraj",
+      "lastName": "Tiger",
+      "email": "hansraj@gmail.com",
+      "password": "hansraj",
+      "mobileNumber": "1234567890",
+      "countryCode": "+91",
+      "annualIncome": "Under 1 Lakh",
+      "education": "MBA",
+      "gender": "M",
+      "profileCreatingFor": "self",
+      "verified": true,
+      "registerProgress": 30,
+      "aboutMe": "I am IT professional based in Mumbai, working as a senior software Engineer. I am 30 years of age and I live with my family that has parents and grandparents.I am a family oriented person and have confidence in living in joint family. In mean time, I jump the chance to persue books and play football.",
+      "height": 173,
+      "weight": 65,
+      "motherTongue": "Hindi",
+      "secondaryLanguages": ["Hindi"],
+      "bodyType": "Slim",
+      "complexion": "Fair",
+      "ethenicGroup": "North Indian",
+      "disability": "No",
+      "workingWith": "Not Working",
+      "occupation": "Not Working",
+      "companyDepartment": "Not Working",
+      "maritalStatus": "Never Married",
+      "workLocation": "N/A",
+      "income": "Under 1 Lakh",
+      "ownCar": "No",
+      "ownHouseFlat": "Yes",
+      "father": "Businessman",
+      "mother": "House Wife",
+      "familyLocation": "Hamirpur, Uttar Pradesh, India",
+      "familyNativePlace": "Moradabad",
+      "brothers": "02",
+      "marriedBrother": "01",
+      "sisters": "0",
+      "marriedSister": "0",
+      "familyType": "Nuclear",
+      "familyValues": "Traditional",
+      "familyStatus": "Middle Class",
+      "religion": "Hindu",
+      "manglik": "No",
+      "caste": "Brahmin",
+      "subCaste": "Brahmin Kanyakubj",
+      "religiousBelief": "Extreme",
+      "guru": "",
+      "guruOrganization": "",
+      "kundaliMatch": "Must",
+      "diet": "Veg",
+      "smoking": "Never",
+      "drinking": "No",
+      "yoga": "Daily",
+      "workout": "Never",
+      "party": "Never",
+      "preferredAge": [0, 29],
+      "preferredGender": "Female",
+      "preferredMaritalStatus": "Never Married",
+      "preferredLanguage": "Hindi",
+      "preferredReligion": "Hindu",
+      "preferredCastCommunity": "Brahmin",
+      "preferredSubCaste": "Brahmin Kanyakubj",
+      "preferredCountry": "India",
+      "preferredState": ["Uttar Pradesh"],
+      "highestEducation": "masters",
+      "highestDegree": "MBA",
+      "highestDegreeInstitution": "LPU",
+      "bachelorDegree": null,
+      "bachelorDegreeInstitution": null,
+      "masterDegree": null,
+      "masterDegreeInstitution": null,
+
+      "preferredCity": [
+        "Agra",
+        "Varanasi",
+        "Sarnath",
+        "Lucknow",
+        "Allahabad",
+        "Fatehpur Sikri",
+        "Mathura",
+        "Ayodhya",
+        "Aligarh",
+        "Baldeo",
+        "Balrampur",
+        "Bithoor",
+        "Noida",
+        "Chitrakoot",
+        "Faizabad",
+        "Gokul",
+        "Gorakhpur",
+        "Jaunpur",
+        "Jhansi",
+        "Kannauj",
+        "Kanpur",
+        "Kaushambi",
+        "Kushinagar",
+        "Mahaban",
+        "Meerut",
+        "Rae Bareily",
+        "Shravasti",
+        "Vrindavan",
+        "Kapilavastu",
+        "Sunauli"
+      ],
+      "aboutEducation": "I am science graduate and completed B.Ed. I also looking for Govt. job.\n\n**B.Sc** from **Bundelkhand University, Jhansi**",
+      "aboutFamily": "In my family, there are my father, my mother, two elder brother and myself. My father is a businessman and my mother is house wife. My family is a mix of modern and traditionl culture.",
+      "aboutReligion": "",
+      "aboutLifeStyle": "",
+      "aboutPreference": "I am looking for soulmate, who understanding, down to earth and enjoys every moment of life. Who will be my best friend of life...!"
+    }
+  },
+  "emailIndices": ["gmail.com"],
+  "matches": {
+    "new": [
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY654D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile1.jpg"
+      },
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY754D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile2.jpg"
+      },
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY664D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile3.jpg"
+      },
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY655D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile4.jpg"
+      },
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY854D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile5.jpg"
+      },
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY666D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile6.jpg"
+      }
+    ],
+    "my": [
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY654D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile1.jpg"
+      },
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY754D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile2.jpg"
+      },
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY664D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile3.jpg"
+      },
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY655D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile4.jpg"
+      },
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY854D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile5.jpg"
+      },
+      {
+        "name": "Ajay Jaiswal",
+        "id": "HVY666D",
+        "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+        "avatar": "/images/profile6.jpg"
+      }
+    ]
+  },
+  "premiumProfiles": [
+    {
+      "id": "HVP3434",
+      "name": "Ajay Jaiswal",
+      "img": "/images/profile1.jpg",
+      "attributes": [
+        { "name": "Age/Height", "value": "26yrs / 5ft 7 inchs" },
+        { "name": "Religion", "value": "Hindu" },
+        { "name": "Mother Tongue", "value": "Hindi" },
+        { "name": "Cast/Community", "value": "Brahmin" },
+        { "name": "Family Location", "value": "Hamirpur, Uttar Pradesh" },
+        { "name": "Education", "value": "MBA" },
+        { "name": "Profession", "value": "Businessman" },
+        { "name": "Income", "value": "Under 6 Lacs" }
+      ],
+      "promptPremium": "744FJAU7"
+    },
+    {
+      "id": "HVP4434",
+      "name": "Sandeep Sahni",
+      "img": "/images/profile3.jpg",
+      "attributes": [
+        { "name": "Age/Height", "value": "26yrs / 5ft 7 inchs" },
+        { "name": "Religion", "value": "Hindu" },
+        { "name": "Mother Tongue", "value": "Hindi" },
+        { "name": "Cast/Community", "value": "Brahmin" },
+        { "name": "Family Location", "value": "Hamirpur, Uttar Pradesh" },
+        { "name": "Education", "value": "MBA" },
+        { "name": "Profession", "value": "Businessman" },
+        { "name": "Income", "value": "Under 6 Lacs" }
+      ],
+      "promptPremium": "744FJAU7"
+    },
+    {
+      "id": "HVP5434",
+      "name": "Ashish Negi",
+      "img": "/images/profile3.jpg",
+      "attributes": [
+        { "name": "Age/Height", "value": "26yrs / 5ft 7 inchs" },
+        { "name": "Religion", "value": "Hindu" },
+        { "name": "Mother Tongue", "value": "Hindi" },
+        { "name": "Cast/Community", "value": "Brahmin" },
+        { "name": "Family Location", "value": "Hamirpur, Uttar Pradesh" },
+        { "name": "Education", "value": "MBA" },
+        { "name": "Profession", "value": "Businessman" },
+        { "name": "Income", "value": "Under 6 Lacs" }
+      ],
+      "promptPremium": "744FJAU7"
+    },
+    {
+      "id": "HVP5435",
+      "name": "Sahil Gautam",
+      "img": "/images/profile4.jpg",
+      "attributes": [
+        { "name": "Age/Height", "value": "26yrs / 5ft 7 inchs" },
+        { "name": "Religion", "value": "Hindu" },
+        { "name": "Mother Tongue", "value": "Hindi" },
+        { "name": "Cast/Community", "value": "Brahmin" },
+        { "name": "Family Location", "value": "Hamirpur, Uttar Pradesh" },
+        { "name": "Education", "value": "MBA" },
+        { "name": "Profession", "value": "Businessman" },
+        { "name": "Income", "value": "Under 6 Lacs" }
+      ],
+      "promptPremium": "744FJAU7"
+    }
+  ],
+  "recentlyUpdated": [
+    {
+      "name": "Ajay Jaiswal",
+      "id": "HVY654D",
+      "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+      "avatar": "/images/profile1.jpg"
+    },
+    {
+      "name": "Ajay Jaiswal",
+      "id": "HVY754D",
+      "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+      "avatar": "/images/profile2.jpg"
+    },
+    {
+      "name": "Ajay Jaiswal",
+      "id": "HVY664D",
+      "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+      "avatar": "/images/profile3.jpg"
+    },
+    {
+      "name": "Ajay Jaiswal",
+      "id": "HVY655D",
+      "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+      "avatar": "/images/profile4.jpg"
+    },
+    {
+      "name": "Ajay Jaiswal",
+      "id": "HVY854D",
+      "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+      "avatar": "/images/profile5.jpg"
+    },
+    {
+      "name": "Ajay Jaiswal",
+      "id": "HVY666D",
+      "attributes": ["Brahmin", "B.com, Never Married", "5,00,000 INR, Noida"],
+      "avatar": "/images/profile6.jpg"
+    }
+  ],
+  "advertisement": {
+    "link": "/TODO",
+    "img": "/images/ad.jpg"
+  },
+  "similarProfiles": [
+    {
+      "id": 1,
+      "content": "<a>Sahil</a> added photos to his profile",
+      "date": "2021-03-28T16:36:28.694Z",
+      "avatar": "/images/profile1.jpg"
+    },
+    {
+      "id": 2,
+      "content": "<a>Sahil</a> added photos to his profile",
+      "date": "2021-03-28T15:36:28.694Z",
+      "avatar": "/images/profile1.jpg"
+    },
+    {
+      "id": 3,
+      "content": "<a>Sahil</a> added photos to his profile",
+      "date": "2021-03-28T13:36:28.694Z",
+      "avatar": "/images/profile1.jpg"
+    },
+    {
+      "id": 4,
+      "content": "<a>Sahil</a> added photos to his profile",
+      "date": "2021-03-28T01:36:28.694Z",
+      "avatar": "/images/profile1.jpg"
+    },
+    {
+      "id": 5,
+      "content": "<a>Sahil</a> added photos to his profile",
+      "date": "2021-03-27T16:36:28.694Z",
+      "avatar": "/images/profile1.jpg"
+    },
+    {
+      "id": 6,
+      "content": "<a>Sahil</a> added photos to his profile",
+      "date": "2021-03-27T15:36:28.694Z",
+      "avatar": "/images/profile1.jpg"
+    },
+    {
+      "id": 7,
+      "content": "<a>Sahil</a> added photos to his profile",
+      "date": "2021-03-27T13:36:28.694Z",
+      "avatar": "/images/profile1.jpg"
+    },
+    {
+      "id": 8,
+      "content": "<a>Sahil</a> added photos to his profile",
+      "date": "2021-03-27T01:36:28.694Z",
+      "avatar": "/images/profile1.jpg"
+    }
+  ]
+}

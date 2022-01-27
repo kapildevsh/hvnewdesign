@@ -1,0 +1,140 @@
+.v-text-field--outlined fieldset {
+  border-color: var(--v-secondary-lighten1);
+}
+
+.icon-with-background {
+  align-self: stretch;
+  background: #e9ecef;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--v-secondary-lighten1);
+
+  .v-icon {
+    font-size: 1rem;
+  }
+}
+
+.text-field-with-icon {
+  .v-text-field--outlined fieldset {
+    border-left-width: 0;
+  }
+
+  input:-internal-autofill-selected {
+    background-color: white !important;
+  }
+
+  .v-input__slot {
+    padding-left: 0 !important;
+  }
+
+  .v-text-field__slot {
+    margin-left: 0.5rem;
+  }
+
+  .v-input__prepend-inner {
+    @extend .icon-with-background;
+  }
+
+  &.v-select .v-input__prepend-inner {
+    margin-right: 0.5rem !important;
+  }
+}
+
+.v-input .fa-search {
+  font-size: 0.9rem;
+}
+
+.v-dialog {
+  position: relative;
+  overflow: visible;
+  max-height: 100%;
+
+  &.carousel-650 {
+    @media (max-height: 690px) {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+
+  &.carousel-850 {
+    @media (max-height: 890px) {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+}
+
+.close-btn {
+  background: red;
+  z-index: 999;
+  right: 0;
+  top: 0;
+
+  .fa-times {
+    margin-top: -2px;
+  }
+
+  @media (min-height: 890px) {
+    right: -10px;
+    top: -10px;
+  }
+}
+
+.v-btn {
+  text-transform: none !important;
+}
+
+.tabs {
+  .v-image__image {
+    background-position: top center !important;
+  }
+
+  .v-tabs-bar__content {
+    padding-bottom: 2px;
+    border-bottom: 1px solid lightgray;
+  }
+  .v-list-item {
+    background-color: white;
+    &:not(first-child) {
+      border-top: thin solid lightgray;
+    }
+
+    @media (max-width: 600px) {
+      min-height: 10px;
+
+      * {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+  .v-list-item.alternative {
+    background-color: #f8f9fa;
+    margin: 0.5rem;
+    box-shadow: 10px 10px 14px -14px rgba(0, 0, 0, 0.75);
+  }
+}
+
+input::placeholder {
+  display: none;
+}
+
+.v-label {
+  font-size: 14px;
+  color: black !important;
+}
+
+.progress-list {
+  .v-list-item {
+    min-height: 24px;
+    @media (min-width: 960px) {
+      height: 32px;
+    }
+  }
+}

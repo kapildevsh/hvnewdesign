@@ -1,0 +1,30 @@
+// https://vuetifyjs.com/en/features/breakpoints/#breakpoint-service
+@mixin variable-at-breakpoints($variable-name, $xs: null, $sm: null, $md: null, $lg: null, $xl: null) {
+  @if $xs != null {
+    #{$variable-name}: #{$xs};
+  }
+
+  @if $sm != null {
+    @media (min-width: 600px) {
+      #{$variable-name}: #{$sm};
+    }
+  }
+
+  @if $md != null {
+    @media (min-width: 960px) {
+      #{$variable-name}: #{$md};
+    }
+  }
+
+  @if $lg != null {
+    @media (min-width: 1264px) {
+      #{$variable-name}: #{$lg};
+    }
+  }
+
+  @if $xl != null {
+    @media (min-width: 1904px) {
+      #{$variable-name}: #{$xl};
+    }
+  }
+}

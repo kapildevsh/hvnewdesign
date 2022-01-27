@@ -1,0 +1,33 @@
+openapi: 3.0.1
+info:
+  title: Happy Vivah Fake api
+  description: Happy Vivah Fake api
+  version: 0.0.1
+servers:
+  - url: /api
+paths:
+  /echo:
+    summary: echo the given msg
+    get:
+      parameters: 
+      - name: msg
+        in: query
+        description: Msg which will be echod
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content:
+            text/plain:
+              schema:
+                type: string
+        400:
+          description: No msg specified
+          content:
+            text/plain:
+              schema:
+                type: string
+      
+      

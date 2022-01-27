@@ -1,0 +1,42 @@
+#app.v-application.css-priority-0 .custom-expansion-panel {
+  .v-expansion-panel-header--active {
+    .fa-plus.v-icon {
+      clip-path: polygon(0 35%, 100% 35%, 100% 58%, 0 58%);
+    }
+  }
+  .fa-plus.v-icon {
+    font-size: small;
+    color: white !important;
+  }
+
+  .v-list-item {
+    min-height: 34px;
+    height: 34px;
+    margin: 0.25rem;
+    margin-bottom: 0.5rem;
+
+    .v-list-item__title {
+      white-space: pre-line;
+    }
+  }
+  .v-expansion-panel-header,
+  .v-expansion-panel--active > .v-expansion-panel-header {
+    padding: 1rem 1rem;
+    height: 32px;
+    min-height: unset;
+  }
+
+  .v-expansion-panel--active:not(:first-child),
+  .v-expansion-panel--active + .v-expansion-panel {
+    margin: 0;
+  }
+
+  .v-expansion-panel-content__wrap {
+    margin: 0;
+    padding: 0;
+  }
+  .v-list-item__action {
+    margin: 0 0.5rem 0 0;
+    padding: 0;
+  }
+}
