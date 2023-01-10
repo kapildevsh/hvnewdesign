@@ -59,13 +59,30 @@ const routes: RouteConfig[] = [
     meta: { secured: (to: Route) => !to.params.profileId },
     component: Gallery, // () => import(/* webpackChunkName: "gallery" */ './views/Gallery.vue'),
   },
-  {
-    path: '/profile/:profileId?',
-    name: 'View Profile',
-    props: true,
-    meta: { secured: (to: Route) => !to.params.profileId },
-    component: ViewProfile, // () => import(/* webpackChunkName: "view-profile" */ './views/ViewProfile.vue'),
-  },
+  // {
+  //   name: 'Create or Update Profile',
+  //   path: '/profile',
+  //   redirect: '/profile/about-me',
+  // },
+  // children: [
+  // {
+  //   path: '/profile/:settingsName?',
+  //   name: 'Create or Update Profile 1',
+  //   meta: { secured: true },
+  //   props: true,
+  //   component: Settings, // () => import(/* webpackChunkName: "settings" */ './views/Settings.vue'),
+  // },
+  // {
+  //   path: '/settings/:settingsName',
+  //   name: 'Settings1',
+  //   meta: { secured: true },
+  //   props: true,
+  //   component: Settings, // () => import(/* webpackChunkName: "settings" */ './views/Settings.vue'),
+  // },
+  // ]
+  // },
+
+  
   {
     path: '/perfect-match',
     name: 'Perfect Match',
@@ -104,13 +121,13 @@ const routes: RouteConfig[] = [
     meta: { bureauPage: true, secured: true },
   },
   {
-    name: 'Settings',
-    path: '/settings',
-    redirect: '/settings/about-me',
+    name: 'Profile main',
+    path: '/profile',
+    redirect: '/profile/about-me',
   },
   {
-    path: '/settings/:settingsName',
-    name: 'Settings',
+    path: '/profile/:settingsName/:profileId?',
+    name: 'Profile inner',
     meta: { secured: true },
     props: true,
     component: Settings, // () => import(/* webpackChunkName: "settings" */ './views/Settings.vue'),

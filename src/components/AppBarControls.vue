@@ -85,7 +85,8 @@
             href="/#/profile"
           >
             <v-avatar size="var(--app-bar-logged-in-user-avatar-size)">
-              <img :src="loggedInUser.img" :alt="loggedInUser | fullName" />
+              <img v-if="loggedInUser.img" :src="loggedInUser.img" :alt="loggedInUser | fullName" />
+              <i v-else class="fas fa-user-circle fa-2x"></i>
             </v-avatar>
           </v-btn>
           <v-btn elevation="5" fab raised rounded x-small class="ml-2" color="primary" @click="$emit('drawer')">

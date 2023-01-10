@@ -30,6 +30,7 @@ export async function dataLoadAction<T, TAdditional>(
   let failed: boolean | string = false;
   let status = 0;
   let data: T;
+  debugger;
 
   await dataPromise
     .then(res => {

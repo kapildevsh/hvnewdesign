@@ -87,7 +87,7 @@ import { validationMixin } from 'vuelidate';
 import { required, maxLength, minLength, email } from 'vuelidate/lib/validators';
 import { hvmq } from '@/mixins';
 import { mapState } from 'vuex';
-import axios from 'axios';
+import HTTP from '../http/http';
 import { uRLSearchParams } from '@/utils';
 
 export default Vue.extend({
@@ -110,12 +110,10 @@ export default Vue.extend({
   },
   name: 'Login',
   computed: {
-    ...mapState('login', ['loggedIn']),
+    ...mapState('login', ['loggedIn','loggedInUser']),
     passwordErrors() {
       if (!this.$v.password.$dirty) return [];
       return [
-        !this.$v.password.minLength && 'Password too short',
-        !this.$v.password.maxLength && 'Password too long',
         !this.$v.password.required && 'Password is required',
       ].filter(Boolean);
     },
@@ -134,9 +132,22 @@ export default Vue.extend({
         this.attemptingLogin = true;
         this.loginFailed = false;
 
-        await axios
-          .post('login', uRLSearchParams({ email: this.email, password: this.password }))
-          .then(() => this.$store.dispatch('login/check'))
+        await HTTP.post(
+          'http://localhost:8000/api/login',
+          uRLSearchParams({ email: this.email, password: this.password })
+        )
+          .then(res => {
+            const user = {
+              id: 992,
+              firstName: res.data.data.user_full_name,
+              lastName: res.data.data.user_full_name,
+              // img:res.data.data.user_full_name,
+              account_status: res.data.data.account_status,
+              user_profile_status: res.data.data.user_profile_status,
+              userType: res.data.data.user_role
+            }
+            this.$store.dispatch('login/check', {data: {...user}});
+          })
           .catch(({ response }) => {
             this.loginFailed = response.data;
           });
@@ -147,10 +158,12 @@ export default Vue.extend({
   },
 
   watch: {
-    loggedIn(value) {
+    loggedInUser(value) {
       if (value) {
         if (this.$route.path === '/register') this.$router.replace('/');
-        else if (this.allowRoute) this.$router.replace((this.$route.query?.redirectTo as string) || '/');
+        else if ( value.account_status == 'created' && !value.user_profile_status  ) {
+          this.$router.replace('/profile/about-me');
+        }
 
         if (!this.allowRoute) this.$emit('close');
       }

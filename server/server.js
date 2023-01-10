@@ -22,7 +22,7 @@ if (cliOpts.dry) process.exit();
 const chalk = require('chalk');
 const express = require('express');
 const app = express();
-
+const cors = require('cors')
 const morgan = require('morgan');
 const multer = require('multer')({ dest: './api/uploads' });
 
@@ -46,7 +46,7 @@ app.use(
     unset: 'destroy',
   })
 );
-
+app.use(cors());
 const database = require('./data.db.json');
 
 function saveDatabase() {

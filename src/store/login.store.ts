@@ -1,4 +1,4 @@
-import axios from 'axios';
+import HTTP from '../http/http';
 import { Module } from 'vuex';
 import { User } from '../models';
 
@@ -20,9 +20,24 @@ export default {
     },
   },
   actions: {
-    async check({ commit }) {
+    check({ commit }, loggedInUser) {
       try {
-        commit('updateLogin', await axios.get('login/check', { validateStatus: status => status === 200 }));
+        const sessionStr = localStorage.getItem('user');
+        
+
+        if(sessionStr) {
+          const session = JSON.parse(sessionStr);
+          const data = {
+            firstName: session.user_full_name,
+            lastName: session.user_full_name,
+            // img:session.user_full_name,
+            account_status: session.account_status,
+            user_profile_status: session.user_profile_status,
+            userType: session.user_role
+        }
+          loggedInUser = {data}
+        }
+        commit('updateLogin', loggedInUser);
       } catch (error) {
         commit('updateLogin', {});
       }

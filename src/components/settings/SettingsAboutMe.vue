@@ -17,6 +17,15 @@
       </v-avatar></v-sheet
     >
     <div>
+      <label class="body-2 mb-2 d-block" for="about-me-are-you-select">You Are A</label>
+      <horizontal-icon-wrapper icon="fa-building">
+        <v-radio-group hide-details="true" class="register-are-you-select ma-0" row dense required v-model="profileFor">
+          <v-radio label="Daughter" value="Daughter" dense></v-radio>
+          <v-radio label="MySelf" value="MySelf" dense></v-radio>
+        </v-radio-group>
+      </horizontal-icon-wrapper>
+    </div>
+    <div>
       <label class="body-2 my-1 d-block" for="about-me-first-name">First Name</label>
       <v-text-field
         :error-messages="firstNameErrors"
@@ -59,12 +68,12 @@
           row
           v-model="gender"
         >
-          <v-radio label="Male" value="M" dense></v-radio>
-          <v-radio label="Female" value="F" dense></v-radio>
+          <v-radio label="Male" value="Male" dense></v-radio>
+          <v-radio label="Female" value="Female" dense></v-radio>
         </v-radio-group>
       </horizontal-icon-wrapper>
     </div>
-    <div>
+    <!-- <div>
       <label class="body-2 mb-2 d-block" for="about-me-are-you-select">You Are A</label>
       <horizontal-icon-wrapper icon="fa-building">
         <v-radio-group hide-details="true" class="register-are-you-select ma-0" row dense required v-model="userType">
@@ -72,13 +81,13 @@
           <v-radio label="Marriage Bureau" value="MB" dense></v-radio>
         </v-radio-group>
       </horizontal-icon-wrapper>
-    </div>
+    </div> -->
     <div>
       <label class="body-2 mb-2 d-block" for="about-me-dob">Date of Birth</label>
       <div ref="dobAnchor">
         <v-menu
           :close-on-content-click="false"
-          :return-value.sync="dob"
+          :return-value.sync="dateOfBirth"
           min-width="auto"
           offset-y
           ref="menu"
@@ -89,11 +98,11 @@
               :error-messages="dobErrors"
               :hide-details="true"
               v-bind="attrs"
-              v-model="dob"
+              v-model="dateOfBirth"
               v-on="on"
               class="border-radius-0 text-field-with-icon"
               dense
-              id="about-me-dob"
+              id="about-me-dateOfBirth"
               outlined
               placeholder="Enter Your Date Of Birth"
               prepend-inner-icon="fa-calendar"
@@ -101,15 +110,15 @@
               required
             ></v-text-field>
           </template>
-          <v-date-picker v-model="dob" no-title scrollable :max="maxDob">
+          <v-date-picker v-model="dateOfBirth" no-title scrollable :max="maxDob">
             <v-spacer></v-spacer>
             <v-btn text color="primary" @click="menu = false"> Cancel </v-btn>
-            <v-btn text color="primary" @click="$refs.menu.save(dob)"> OK </v-btn>
+            <v-btn text color="primary" @click="$refs.menu.save(dateOfBirth)"> OK </v-btn>
           </v-date-picker>
         </v-menu>
       </div>
     </div>
-    <div>
+    <!-- <div>
       <label class="body-2 mb-2 d-block" for="about-me-email-address">Email address</label>
       <v-text-field
         :error-messages="emailErrors"
@@ -124,8 +133,8 @@
         type="email"
         v-model="email"
       ></v-text-field>
-    </div>
-    <div>
+    </div> -->
+    <!-- <div>
       <label class="body-2 mb-2 d-block" for="about-me-mobile-number">Mobile number</label>
       <div class="d-flex flex-wrap flex-sm-nowrap gap-1" ref="rmnAnchor">
         <v-select
@@ -155,20 +164,20 @@
           v-model="mobileNumber"
         ></v-text-field>
       </div>
-    </div>
+    </div> -->
     <div>
-      <label class="body-2 my-1 d-block" for="settings-maritalStatus">Marital Status</label>
+      <label class="body-2 my-1 d-block" for="settings-relationshipStatus">Marital Status</label>
       <v-select
-        :items="maritalStatusItems"
+        :items="relationshipStatusItems"
         :menu-props="{ maxHeight: '400' }"
         active-class="primary--text"
         class="border-radius-0 text-field-with-icon"
         dense
-        id="settings-maritalStatus"
+        id="settings-relationshipStatus"
         outlined
         placeholder="Select Your Marital Status"
         prepend-inner-icon="fa-graduation-cap"
-        v-model="maritalStatus"
+        v-model="relationshipStatus"
       ></v-select>
     </div>
     <div>
@@ -219,35 +228,35 @@
       ></v-select>
     </div>
     <div>
-      <label class="body-2 mb-2 d-block" for="about-me-complexion">Complexion</label>
+      <label class="body-2 mb-2 d-block" for="about-me-skinColor">Complexion</label>
       <v-select
-        :items="complexionItems"
+        :items="skinColorItems"
         :menu-props="{ maxHeight: '400' }"
         active-class="primary--text"
         class="border-radius-0 text-field-with-icon"
         dense
         hide-details="true"
-        id="about-me-complexion"
+        id="about-me-skinColor"
         outlined
         placeholder="Select Your Complexion"
         prepend-inner-icon="fa-user"
-        v-model="complexion"
+        v-model="skinColor"
       ></v-select>
     </div>
     <div>
-      <label class="body-2 mb-2 d-block" for="about-me-ethenicities">Ethenic Group</label>
+      <label class="body-2 mb-2 d-block" for="about-me-ethnicGroup">Ethnic Group</label>
       <v-select
-        :items="ethenicitiesItems"
+        :items="ethnicGroupItems"
         :menu-props="{ maxHeight: '400' }"
         active-class="primary--text"
         class="border-radius-0 text-field-with-icon"
         dense
         hide-details="true"
-        id="about-me-ethenicities"
+        id="about-me-ethnicGroup"
         outlined
-        placeholder="Select Your Ethenic Group"
+        placeholder="Select Your Ethnic Group"
         prepend-inner-icon="fa-users"
-        v-model="ethenicGroup"
+        v-model="ethnicGroup"
       ></v-select>
     </div>
     <div>
@@ -260,31 +269,33 @@
           id="about-me-disabilities"
           required
           row
-          v-model="disability"
+          v-model="anyDisability"
         >
           <v-radio label="Yes" value="Yes" dense></v-radio>
           <v-radio label="No" value="No" dense></v-radio>
         </v-radio-group>
       </horizontal-icon-wrapper>
     </div>
-    <div class="grid-column-span-all" v-if="disability === 'Yes'">
-      <label class="body-2 mb-2 d-block" for="about-me-disabilityDescription">Please Describe Your Disability</label>
-      <v-text-field
+    <div class="grid-column-span-all" v-if="anyDisability === 'Yes'">
+      <label class="body-2 mb-2 d-block" for="about-me-aboutDisability">Please Describe Your Disability</label>
+      <v-textarea
         :hide-details="true"
-        class="border-radius-0 text-field-with-icon"
+        class="border-radius-0 textarea-with-icon"
         dense
-        id="about-me-disabilityDescription"
+        id="about-me-aboutDisability"
         outlined
         placeholder="Please Describe Your Disability"
         prepend-inner-icon="fa-wheelchair"
         required
-        v-model="disabilityDescription"
-      ></v-text-field>
+        v-model="aboutDisability"
+      ></v-textarea>
     </div>
     <div>
       <label class="body-2 mb-2 d-block" for="about-me-mother-tongue">Your Mother Tongue</label>
       <v-select
-        :items="languagesItems"
+        :items="languages"
+        item-text="value"
+        item-value="key"
         :menu-props="{ maxHeight: '400' }"
         active-class="primary--text"
         class="border-radius-0 text-field-with-icon"
@@ -294,13 +305,16 @@
         outlined
         placeholder="Select Your Mother Tongue"
         prepend-inner-icon="fa-american-sign-language-interpreting"
-        v-model="motherTongue"
+        v-model="motherLanguage"
       ></v-select>
     </div>
     <div>
+      {{ secondaryLanguages }}
       <label class="body-2 mb-2 d-block" for="about-me-spoken-language">Secondary Language(s)</label>
       <v-select
-        :items="languagesItems"
+        :items="languages"
+        item-text="value"
+        item-value="key"
         :menu-props="{ maxHeight: '400' }"
         active-class="primary--text"
         class="border-radius-0 text-field-with-icon"
@@ -349,15 +363,15 @@
       ></v-select>
     </div>
     <div class="grid-column-span-all">
-      <label class="body-2 mb-2 d-block" for="about-me-about-me">Write About Yourself</label>
+      <label class="body-2 mb-2 d-block" for="about-me-aboutMyProfile">Write About Yourself</label>
       <v-textarea
         class="border-radius-0"
         dense
-        id="about-me-about-me"
+        id="about-me-aboutMyProfile"
         outlined
         required
         placeholder="Write About Yourself"
-        v-model="aboutMe"
+        v-model="aboutMyProfile"
       ></v-textarea>
     </div>
     <span class="grid-column-span-all" style="height: 15px"></span>
@@ -370,6 +384,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
+import { mapState } from 'vuex';
 import { isValidImg } from '../../data/common-data';
 import {
   basicDetailsMixin,
@@ -378,25 +393,42 @@ import {
   commonSettingsPageMixin,
   CommonSettingsPageTyped,
 } from '../../mixins';
-import { User } from '../../models';
+import {
+  AboutUser,
+  BodyType,
+  EthnicGroup,
+  Gender,
+  ProfileFor,
+  RelationshipStatus,
+  SkinColor,
+  User,
+  YesNo,
+} from '../../models';
 import HorizontalIconWrapper from '../HorizontalIconWrapper.vue';
 
-class SettingsAboutMeState implements Partial<User> {
-  aboutMe: string = null;
-  bodyType: string = null;
-  disability = 'No';
-  dob: string = null;
-  ethenicGroup: string = null;
-  height: number = null;
+class SettingsAboutMeState implements AboutUser {
+  aboutDisability = '';
+  aboutMyProfile = '';
+  anyDisability: YesNo = 'No';
+  customProfileID? = '';
+  bodyType: BodyType = null;
+  dateOfBirth = '';
+  ethnicGroup: EthnicGroup = null;
+  firstName = '';
+  gender: Gender = null;
+  height = '';
+  img?: File = null;
+  secondaryLanguages: string = '';
+  lastName = '';
   hobbies: string[] = [];
-  img: string | File = null;
+  motherLanguage = '';
   interest: string[] = [];
-  motherTongue: string = null;
-  secondaryLanguages: string[] = [];
-  weight = 0;
-  gender: User['gender'] = null;
-  maritalStatus: string = null;
-  disabilityDescription: string;
+  profileFor: ProfileFor = null;
+  profileID? = '';
+  relationshipStatus: RelationshipStatus = null;
+  skinColor: SkinColor;
+  userID = '';
+  weight = '';
 }
 
 export default Vue.extend({
@@ -404,14 +436,41 @@ export default Vue.extend({
   mixins: [validationMixin, basicDetailsMixin, commonDataMixin, commonSettingsPageMixin],
   components: { HorizontalIconWrapper },
   data: () => new SettingsAboutMeState() as CommonSettingsPageTyped<SettingsAboutMeState>,
-  validations: basicDetailsValidations('password', 'confirmPassword', 'agreed'),
+  validations: basicDetailsValidations('password', 'confirmPassword', 'agreed', 'email', 'mobileNumber'
+  // ,'firstName','lastName','countryCode','userType','gender','dateOfBirth','profileFor'
+  ),
+  computed: {
+    ...mapState('masterdata', ['languages']),
+    languagesitems() {
+      debugger;
+      return this.languages;
+    },
+  },
   methods: {
-    save() {
-      this.defaultSaveAction(Object.keys(new SettingsAboutMeState()), true);
+    async save() {
+      const saveData = this.defaultSaveAction(Object.keys(new SettingsAboutMeState()), true);
+      if(!saveData) return;
+      saveData.image = await this.img.arrayBuffer;
+      console.log(saveData);
+      if(this.$route.params.profileId){
+        this.$store.dispatch('profile/update', { data: {...saveData},profileId: this.$route.params.profileId});
+      }else{
+         this.$store.dispatch('profile/save', { ...saveData });
+      }
+      
     },
     setImg(file: File) {
       if (isValidImg(file.name)) this.img = file;
     },
+  },
+  watch: {
+    languages(v) {
+      debugger;
+      console.log(v);
+    },
+  },
+  created() {
+    this.$store.dispatch('masterdata/languages');
   },
 });
 </script>

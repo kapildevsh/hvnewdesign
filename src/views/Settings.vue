@@ -1,7 +1,6 @@
 <template>
   <div class="settings-container d-flex flex-nowrap gap-4 position-relative justify-md-center ma-4">
     <v-navigation-drawer
-      
       disable-resize-watcher
       v-model="drawer"
       :mini-variant.sync="mini"
@@ -27,7 +26,7 @@
             v-for="item in links"
             :key="item.title"
             link
-            :href="'/#/settings/' + item.link"
+            :href="'/#/profile/' + item.link"
             class="primary--text"
           >
             <v-list-item-icon>
@@ -57,19 +56,20 @@
             label
             :color="loadingState.data.registerProgress | progressColor"
             :text-color="loadingState.data.registerProgress | progressTextColor"
-            style="margin-top:2px"
+            style="margin-top: 2px"
           >
             {{ Math.ceil(loadingState.data.registerProgress) }}% Completed
           </v-chip>
         </div>
       </template>
-      <data-loading :loadingData="loadingState" :handleUnauthorized="true" v-slot="{ data }" class=" pa-4 ">
+      <data-loading :loadingData="loadingState" :handleUnauthorized="true" v-slot="{ data }" class="pa-4">
         <component v-if="selected" :is="selected.component" v-bind="{ userData: data }"></component>
+        <!-- <component v-else :is="selected.shimmerComponent" ></component> -->
         <not-found v-else></not-found>
       </data-loading>
     </v-sheet>
     <v-sheet elevation="2" v-if="hvmq.lg" class="align-self-baseline">
-      <advertisement></advertisement>
+      <!-- <advertisement></advertisement> -->
     </v-sheet>
   </div>
 </template>
@@ -77,7 +77,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import { mapState } from 'vuex';
-import Advertisement from '@/components/Advertisement.vue';
+// import Advertisement from '@/components/Advertisement.vue';
 import { hvmq } from '@/mixins';
 import SettingsAboutMe from '../components/settings/SettingsAboutMe.vue';
 import SettingsEducationCareer from '../components/settings/SettingsEducationCareer.vue';
@@ -87,10 +87,16 @@ import SettingsFamily from '../components/settings/SettingsFamily.vue';
 import SettingsReligion from '../components/settings/SettingsReligion.vue';
 import SettingsLifeStyle from '../components/settings/SettingsLifeStyle.vue';
 import SettingsPartnerPreference from '../components/settings/SettingsPartnerPreference.vue';
+import ShimmerAboutMe from '@/components/settings/ShimmerAboutMe.vue';
 
 const links = Object.freeze(
   [
-    { title: 'About Me', icon: 'fa-heart', link: 'about-me', component: SettingsAboutMe, index: 0 },
+    { title: 'About Me', 
+    icon: 'fa-heart', 
+    link: 'about-me', 
+    component: SettingsAboutMe,
+    shimmerComponent: ShimmerAboutMe,
+    index: 0 },
     {
       title: 'Education and Career',
       icon: 'fa-graduation-cap',
@@ -125,12 +131,12 @@ const links = Object.freeze(
 );
 
 export default Vue.extend({
-  components: { Advertisement, DataLoading, NotFound },
+  components: { DataLoading, NotFound },
   name: 'Settings',
   props: {
     settingsName: {
       type: String,
-      required: true,
+      required: false,
     },
   },
   mixins: [hvmq],
@@ -144,7 +150,8 @@ export default Vue.extend({
     ...mapState('login', ['loggedInUser']),
     ...mapState('profile', ['loadingState']),
     selected() {
-      return links.find(item => item.link === this.settingsName);
+      debugger;
+      return links.find(item => item.link == this.settingsName);
     },
   },
   watch: {
@@ -158,7 +165,10 @@ export default Vue.extend({
     loggedInUser: {
       immediate: true,
       handler(value) {
-        this.$store.dispatch('profile/init', value.id);
+        if(value.id){
+          this.$store.dispatch('profile/init', value.id);
+
+        }
       },
     },
   },

@@ -58,7 +58,7 @@
       <label class="body-2 mb-1 d-block" for="settings-martial-status">Marital Status</label>
       <v-select
         :hide-details="true"
-        :items="maritalStatusItems"
+        :items="relationshipStatusItems"
         :menu-props="{ offsetY: true }"
         attach
         class="border-radius-0 text-field-with-icon"
@@ -68,7 +68,7 @@
         placeholder="Select Marital Status"
         prepend-inner-icon="fa-ring"
         required
-        v-model="preferredMaritalStatus"
+        v-model="preferredRelationshipStatus"
       ></v-select>
     </div>
     <div>
@@ -226,7 +226,7 @@ class SettingsPartnerPreferenceState implements Partial<User> {
   preferredCountry: string = null;
   preferredGender: string = null;
   preferredLanguage: string = null;
-  preferredMaritalStatus: string = null;
+  preferredRelationshipStatus: string = null;
   preferredReligion: string = null;
   preferredState: string[] = null;
   preferredSubCaste: string = null;

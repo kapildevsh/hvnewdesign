@@ -1,11 +1,12 @@
 
-module.exports = {
+module.exports = {  
   transpileDependencies: ["vuetify"],
-  // productionSourceMap: false,
+  productionSourceMap: false,
+  lintOnSave: false,
   devServer: {
     proxy: {
       '/api/*': {
-        target: 'http://localhost:5050'
+        target: 'http://localhost:8000'
       }
     }
   },

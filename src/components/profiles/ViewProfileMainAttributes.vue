@@ -86,7 +86,7 @@ export default Vue.extend({
   data: () => ({
     interestRequestSent: false,
     fields: Object.freeze([
-      { name: 'Marital Status', field: 'maritalStatus', icon: 'fa-ring' },
+      { name: 'Marital Status', field: 'relationshipStatus', icon: 'fa-ring' },
       { name: 'Religion', field: 'religion', icon: 'fa-pray' },
       { name: 'Cast & Community', field: 'cast_community', icon: 'fa-users' },
       { name: 'Education', field: 'education', icon: 'fa-graduation-cap' },

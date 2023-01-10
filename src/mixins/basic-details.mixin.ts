@@ -13,8 +13,8 @@ const validations = {
   userType: { required },
   gender: { required },
   agreed: { sameAs: sameAs(() => true) },
-  dob: { required },
-  profileCreatingFor: { required },
+  dateOfBirth: { required },
+  profileFor: { required },
 };
 
 export function basicDetailsValidations(...exclude: (keyof typeof validations)[]): typeof validations {
@@ -28,7 +28,7 @@ export function basicDetailsValidations(...exclude: (keyof typeof validations)[]
 export const basicDetailsMixin = Vue.extend({
   mixins: [validationMixin],
   data: () => ({
-    dob: null,
+    dateOfBirth: null,
     maxDob: new Date().toISOString(),
     userType: 'U',
     firstName: null,
@@ -37,7 +37,7 @@ export const basicDetailsMixin = Vue.extend({
     mobileNumber: null,
     countryCode: '+91',
     gender: 'M',
-    profileCreatingFor: null,
+    profileFor: null,
     agreed: false,
   }),
   computed: {
@@ -103,12 +103,12 @@ export const basicDetailsMixin = Vue.extend({
       return [!this.$v.agreed.sameAs && 'Agreement is required'].filter(Boolean);
     },
     dobErrors() {
-      if (!this.$v.dob.$dirty) return [];
-      return [!this.$v.dob.required && 'Date of birth is required'].filter(Boolean);
+      if (!this.$v.dateOfBirth.$dirty) return [];
+      return [!this.$v.dateOfBirth.required && 'Date of birth is required'].filter(Boolean);
     },
-    profileCreatingForErrors() {
-      if (!this.$v.profileCreatingFor.$dirty) return [];
-      return [!this.$v.profileCreatingFor.required && 'Profile Creating For is required'].filter(Boolean);
+    profileForErrors() {
+      if (!this.$v.profileFor.$dirty) return [];
+      return [!this.$v.profileFor.required && 'Profile Creating For is required'].filter(Boolean);
     },
   },
 });

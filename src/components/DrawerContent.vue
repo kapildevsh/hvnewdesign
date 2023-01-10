@@ -63,7 +63,7 @@
           </v-list-item>
         </v-list-group>
 
-        <v-list-item v-if="loggedIn" link href="/#/settings">
+        <v-list-item v-if="loggedIn" link href="/#/profile">
           <v-list-item-title>Settings</v-list-item-title>
         </v-list-item>
 
@@ -110,7 +110,7 @@
 </template>
 
 <script lang="ts">
-import axios from 'axios';
+// import axios from 'axios';
 import Vue from 'vue';
 import { mapState } from 'vuex';
 import ShareBtns from './ShareBtns.vue';
@@ -136,13 +136,15 @@ export default Vue.extend({
       setTimeout(() => this.$emit('close'), 250);
     },
     async logout() {
-      this.loggingOut = true;
-      await axios
-        .post('logout', {})
-        .then(() => location.reload())
-        .catch(({ response }) => alert('Failed to logout' + response.data));
+      // this.loggingOut = true;
+      localStorage.removeItem('user');
+      location.reload();
+      // await axios
+      //   .post('logout', {})
+      //   .then(() => location.reload())
+      //   .catch(({ response }) => alert('Failed to logout' + response.data));
 
-      this.loggingOut = false;
+      // this.loggingOut = false;
       setTimeout(() => this.$emit('close'), 250);
     },
   },

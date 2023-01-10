@@ -5,7 +5,7 @@ import { User } from '../models';
 export type CommonSettingsPageTyped<T> = T & {
   userData: User;
   onUpdate: (user: User) => void;
-  defaultSaveAction: (fields: string[], validate?: boolean) => Promise<void>;
+  defaultSaveAction: (fields: string[], validate?: boolean, config?: { method: string; path: string }) => any;
 };
 
 export const commonSettingsPageMixin = Vue.extend({
@@ -26,7 +26,7 @@ export const commonSettingsPageMixin = Vue.extend({
     onUpdate(user: User) {
       // this function is intended to be overridden
     },
-    defaultSaveAction(fields: string[], validate?: boolean) {
+    defaultSaveAction(fields: string[], validate?: boolean, path?: { method: string; path: string }) {
       if (validate) {
         this.$v.$touch();
         if (this.$v.$invalid) {
@@ -44,8 +44,10 @@ export const commonSettingsPageMixin = Vue.extend({
 
         return acc;
       }, {} as Dictionary<any>);
-
       console.log(this.$options.name, 'Save: \n\n', JSON.stringify(saveData, null, 2));
+      return saveData;
+      // this.$store.dispatch('profile/update', { ...saveData });
+      
     },
   },
 });

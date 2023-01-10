@@ -176,10 +176,10 @@ export const contactOptions = freezeObjArray([
   },
 ]);
 
-export const bodyTypes = Object.freeze(['Fit', 'Slim', 'Curvy', 'Overweight', 'Underweight']);
+export const bodyTypes = Object.freeze(['Fat', 'Slim', 'Average', 'Athletics']);
 export const hobbies = Object.freeze(['Painting', 'Drink', 'Reading', 'Dancing', 'Cricket', 'Smoking']);
 export const interests = Object.freeze(['Painting', 'Drink', 'Reading', 'Dancing', 'Cricket', 'Smoking']);
-export const complexion = Object.freeze(['Light', 'Fair', 'Wheatish', 'Medium Brown', 'Brown', 'Dark']);
+export const skinColor = Object.freeze(['Very Fair', 'Fair', 'Wheatish', 'Wheatish Brown', 'Dark']);
 export const disabilities = Object.freeze([
   'Blindness',
   'Person with low vision',
@@ -191,7 +191,8 @@ export const disabilities = Object.freeze([
   'Learning Disabilities (Dyslexia)',
   'No',
 ]);
-export const ethenicities = Object.freeze([
+export const ethnicGroup = Object.freeze(['South Indian', 'North Indian', 'Bihari', 'Bangali', 'Kashmiri', 'Pahadi', 'Anglo Indian', 'North East'])
+export const languagesItems = Object.freeze([
   'Assamese',
   'Awadhi',
   'Banjara',
@@ -314,4 +315,5 @@ export const nativePlaces = Object.freeze(['Sirsa', 'Moradabad']);
 export const familyValues = Object.freeze(['Traditional', 'Open Minded']);
 export const familyStatuses = Object.freeze(['Upper Class', 'Middle Class', 'Lower Class']);
 export const religiousBeliefs = Object.freeze(['Extreme', 'Open']);
-export const maritalStatuses = Object.freeze(['Single', 'Divorced', 'Never Married']);
+export const relationshipStatusItems = Object.freeze(['Single', 'Divorced', 'Never Married']);
+export const heightItems = Object.freeze(['5 Feet 7 Inches']);

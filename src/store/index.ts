@@ -12,6 +12,7 @@ import login from './login.store';
 import gallery from './gallery.store';
 import advertisement from './advertisement.store';
 import similarProfiles from './similar-profiles.store';
+import masterdata from './masterdata.store';
 
 Vue.use(Vuex);
 
@@ -20,6 +21,7 @@ export default new Store({
   mutations: {},
   actions: {},
   modules: {
+    masterdata,
     login,
     home,
     index,

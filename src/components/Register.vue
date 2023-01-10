@@ -204,7 +204,7 @@ export default Vue.extend({
   components: { HorizontalIconWrapper },
   mixins: [validationMixin, basicDetailsMixin],
   name: 'Register',
-  validations: basicDetailsValidations('dob', 'profileCreatingFor'),
+  validations: basicDetailsValidations('dateOfBirth', 'profileFor'),
   props: {
     allowRoute: {
       type: Boolean,

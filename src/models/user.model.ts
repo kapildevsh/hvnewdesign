@@ -59,7 +59,43 @@ export interface Attribute {
   name: string;
   icon: string;
 }
+// export enum BodyType {
+//   AVERAGE = 'Average',
+// } 
+// export enum EthnicGroup {
+//   NORTH_EAST = 'North East'
+// }
+export type BodyType = 'Fat' |'Slim' |'Average' |'Athletics'
+export type Gender = 'Male' | 'Female';
+export type ProfileFor = '';
+export type RelationshipStatus = 'Single' | 'Divorced' | 'Never Married';
+export type EthnicGroup = 'South Indian' | 'North Indian' | 'Bihari' | 'Bangali' | 'Kashmiri' | 'Pahadi' | 'Anglo Indian' | 'North East';
+export type SkinColor = 'Very Fair';
 
+export type YesNo = 'Yes' | 'No';
+
+export interface AboutUser {
+  aboutDisability: string
+  aboutMyProfile: string
+  anyDisability: YesNo
+  bodyType: BodyType,
+  customProfileID?: string
+  dateOfBirth: string
+  ethnicGroup: EthnicGroup
+  firstName: string
+  gender: Gender
+  height: string
+  img?: File
+  secondaryLanguages: string
+  lastName: string
+  motherLanguage: string
+  profileFor: ProfileFor
+  profileID?: string
+  relationshipStatus: RelationshipStatus
+  skinColor: SkinColor
+  userID: string
+  weight: string
+}
 export interface User {
   aboutEducation: string;
   aboutFamily: string;
@@ -83,7 +119,7 @@ export interface User {
   drinking: string;
   education: string;
   email: string;
-  ethenicGroup: string;
+  ethnicGroup: string;
   explore: Explore[];
   familyBrothers: number;
   familyCity: string;
